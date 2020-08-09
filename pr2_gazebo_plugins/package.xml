@@ -22,6 +22,7 @@
   <build_depend>cv_bridge</build_depend>
   <build_depend>diagnostic_msgs</build_depend>
   <build_depend>diagnostic_updater</build_depend>
+  <build_depend>gazebo_dev</build_depend>
   <build_depend>gazebo_msgs</build_depend>
   <build_depend>gazebo_plugins</build_depend>
   <build_depend>geometry_msgs</build_depend>
@@ -46,6 +47,7 @@
 
  <!-- <run_depend>pcl_conversions</run_depend>
   <run_depend>pcl_ros</run_depend> -->
+  <run_depend>gazebo_dev</run_depend>
   <run_depend>gazebo_ros</run_depend>
   <run_depend>gazebo_plugins</run_depend>
   <run_depend>gazebo_msgs</run_depend>
@@ -69,9 +71,5 @@
   <run_depend>image_transport</run_depend>
   <run_depend>message_runtime</run_depend>
   <run_depend>message_generation</run_depend>
-
-  <!-- temporary hack for orocos kdl until it's packaged better upstream -->
-  <build_depend>orocos_kdl</build_depend>
-  <run_depend>orocos_kdl</run_depend>
 
 </package>

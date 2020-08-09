@@ -15,10 +15,8 @@ endif()
 
 # Depend on system install of Gazebo and SDFormat
 find_package(gazebo REQUIRED)
-pkg_check_modules(SDF sdformat REQUIRED)
 #find_package(PCL REQUIRED)
 find_package(Boost REQUIRED COMPONENTS thread)
-find_package(orocos_kdl)
 
 # catkin dependencies
 find_package(catkin
@@ -27,6 +25,7 @@ find_package(catkin
     cv_bridge
     diagnostic_msgs
     diagnostic_updater
+    gazebo_dev
     gazebo_msgs
     gazebo_plugins
     geometry_msgs
@@ -92,8 +91,6 @@ catkin_package(
     image_transport 
   DEPENDS 
     GAZEBO
-    SDF
-    orocos_kdl
   LIBRARIES
     gazebo_ros_controller_manager
     gazebo_ros_power_monitor
